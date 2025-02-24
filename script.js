@@ -39,3 +39,22 @@ searchBtn.addEventListener("click", (e) => {
         recipeContainer.innerHTML = "<p>Please enter a search term.</p>";
     }
 });
+ 
+
+function loginSuccess() {
+    
+    alert("Login Successful! 🎉 Redirecting...");
+    window.location.href = "index.html";
+
+  }
+ 
+
+  function submit() {
+    alert("Registration Successful! 🎉 Redirecting...");
+    window.location.href = "index.html";
+  }
+
+
+
+
+
