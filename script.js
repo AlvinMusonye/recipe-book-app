@@ -55,6 +55,36 @@ function loginSuccess() {
   }
 
 
+  document.getElementById("recipeForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let title = document.getElementById("recipeTitle").value;
+    let ingredients = document.getElementById("recipeIngredients").value;
+    let instructions = document.getElementById("recipeInstructions").value;
+
+    let recipeDiv = document.createElement("div");
+    recipeDiv.classList = "bg-gray-100 p-4 rounded mt-2 shadow";
+
+    recipeDiv.innerHTML = `
+        <h3 class="text-lg font-bold text-orange-600">${title}</h3>
+        <p class="text-sm text-gray-700"><strong>Ingredients:</strong> ${ingredients}</p>
+        <p class="text-gray-600"><strong>Instructions:</strong> ${instructions}</p>
+    `;
+
+    document.getElementById("recipeList").prepend(recipeDiv);
+
+  
+    let recipeCount = document.getElementById("recipeList").children.length;
+    if (recipeCount === 1) {
+        document.getElementById("featuredTitle").innerText = title;
+        document.getElementById("featuredIngredients").innerText = "Ingredients: " + ingredients;
+        document.getElementById("featuredInstructions").innerText = instructions;
+    }
+
+   
+    document.getElementById("recipeForm").reset();
+});
+
 
 
 

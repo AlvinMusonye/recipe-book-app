@@ -42,24 +42,39 @@
        <li> <a href="" class="hover:text-orange-600">✅ International Cuisine</a></li>
     </ul>
 </div>
-<h2>3️⃣ Cooking Tips & Tricks 👨‍🍳</h2>
- 
- <p class="font-bold">10 Tips to Make Your Pasta Perfect Every Time.</p>
-4️⃣ Step-by-Step Recipe Guides 📖
-Detailed walkthroughs of recipes with pictures or videos.
-Example: “How to Bake the Perfect Chocolate Cake.”
-5️⃣ User-Submitted Recipes 📝
-Allow users to share their own recipes and stories.
-Feature a “Recipe of the Month.”
-6️⃣ Behind-the-Scenes / Personal Stories 🏡
-Share your journey, inspiration, or the story behind certain dishes.
-7️⃣ Nutrition & Diet Tips 🥗
-Provide healthy eating tips, meal prep guides, or diet-friendly recipes.
-Example: “5 High-Protein Breakfast Ideas.”
-8️⃣ Food & Cooking Product Reviews 🛒
-Review kitchen gadgets, appliances, or food ingredients.
-Example: “Best Blenders for Smoothies in 2024.”
 
+ <div class="m-9">
+ <p class="font-bold text-3xl"> Quick & Easy Meals Recipes</p>   
+    
+    <div>
+       <h4 class="font-semibold "> Step-by-Step Recipe Guides 📖</h4>
+       <h3 class="font-bold text-2xl text-orange-600 underline"> How to Bake the Perfect Chocolate Cake.</h3>
+       <iframe class="m-15" width="560" height="315" src="https://www.youtube.com/embed/vI5w-fK25w4?si=rvQGhk9C4JLYsZZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <h3 class="font-bold text-2xl text-orange-600 underline">A Quick Pilau Recipe</h3>
+       <iframe class="m-15" width="560" height="315" src="https://www.youtube.com/embed/50UG9I1t1rg?si=fTafN88i3s7LhpXp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <h3 class="font-bold text-2xl text-orange-600 underline">Tilapia Recipe</h3>
+       <iframe class="m-15" width="560" height="315" src="https://www.youtube.com/embed/1LtXG6CQmZc?si=pUZiLDmOqIN-NHiq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>    
+</div>
+<section>
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded shadow-lg">
+        <h2 class="text-2xl font-bold text-orange-500 text-center">Submit Your Recipe 📝</h2>
+    <div>    
+        <form id="recipeForm" class="mt-4">
+            <input type="text" id="recipeTitle" placeholder="Recipe Title" class="w-full p-2 border rounded mb-2" required>
+            <textarea id="recipeIngredients" placeholder="Ingredients (comma separated)" class="w-full p-2 border rounded mb-2" required></textarea>
+            <textarea id="recipeInstructions" placeholder="Instructions" class="w-full p-2 border rounded mb-2" required></textarea>
+            <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded w-full hover:bg-orange-600">Submit Recipe</button>
+        </form>
+    </div>
+
+
+   <div class="max-w-2xl mx-auto bg-white p-6 rounded shadow-lg mt-6">
+       <h2 class="text-2xl font-bold text-orange-500 text-center">User-Submitted Recipes 📖</h2>
+       <div id="recipeList" class="mt-4"></div>
+   </div>
+</section>   
+   <script src="script.js"></script>
 
 <footer class="bg-orange-300 text-white py-10">
     <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -130,5 +145,6 @@ Example: “Best Blenders for Smoothies in 2024.”
         </div>
     </div>
 </footer>
+
 </body>
 </html>
